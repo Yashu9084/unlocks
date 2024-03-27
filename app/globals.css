@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+body{
+  background-color: #0E1425;
+  color: #ffffff;
+}
+.program-card {
+  @apply z-[1] w-[250px] max-w-[250px] gap-y-5 shadow-[2px_2px_0_0_white,3px_3px_0_1px_var(--bg\_dark)] text-[color:var(--white)] bg-[#030a21] flex-col flex relative p-8 rounded-2xl;
+}
