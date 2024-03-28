@@ -29,7 +29,7 @@ export default function Homepage() {
           alt="Gradient"
           width={128}
           height={128}
-          className="w-[20%] h-full absolute inset-0 z-[1]"
+          className="md:w-[20%] w-[50%] h-full absolute inset-0 z-[1]"
           unoptimized
         ></Image>
         <div className="relative max-w-screen-xl mx-auto lg:px-36  z-10 text-center text-white">
