@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import CardIcon from "@/public/CardIcon.png";
-import TestimonialScroll from "../components/TestimonialScroll";
+import TestimonialScroll from "../components/TestimonialScroll/TestimonialScroll";
 const programs = [
   {
     title: "Marketing",

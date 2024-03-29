@@ -1,4 +1,5 @@
 import React from "react";
+import  './style.css'
 import Image from "next/image";
 import google from "@/public/google.png";
 import google2 from "@/public/google2.png";
@@ -104,7 +105,7 @@ const TestimonialScroll = () => {
        })"
       className="w-full px-60 mt-4 inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_0px,_black_calc(100%-0px),transparent_100%)]"
     >
-      <ul className="flex items-center justify-center md:justify-start [&_li]:mx-2 [&_img]:max-w-none animate-infinite-scroll">
+      <ul className="flex items-center justify-center md:justify-start [&_li]:mx-2 [&_img]:max-w-none animate-infinite-scroll ">
         {programs.map((program) => (
           <li className="min-w-[480px]">
             <Card key={program.title} {...program} />
