@@ -8,6 +8,9 @@ import Brandshowcase from "../Sections/Brandshowcase";
 import Newsletter from "../Sections/Newsletter";
 import Companies from "../Sections/Companies";
 import Timeline from "../Sections/Timeline";
+import cardimg from "../../assets/CardImg.png";
+import edimg from "../../assets/edimg.png";
+import Experience from "../Sections/Experience";
 
 export default function Homepage() {
   return (
@@ -272,7 +275,18 @@ export default function Homepage() {
           >
             Apply for access -{">"}
           </button>
-          <div className="aspect-w-16 aspect-h-9 mx-auto flex justify-center mt-10 h-[70vh]">
+          <div className="relative aspect-w-16 aspect-h-9 mx-auto flex justify-center mt-10 h-[70vh]">
+            ,
+            <Image
+              className="absolute -left-28 top-[20%]"
+              src={cardimg}
+              alt=""
+            ></Image>
+            <Image
+              className="absolute -left-20 top-40"
+              src={edimg}
+              alt=""
+            ></Image>
             <iframe
               src="https://www.youtube.com/embed/r9jwGansp1E"
               frameborder="0"
@@ -288,6 +302,7 @@ export default function Homepage() {
       <Practioners></Practioners>
       <Timeline></Timeline>
       <Testimonials></Testimonials>
+      <Experience></Experience>
       <Brandshowcase></Brandshowcase>
       <Newsletter></Newsletter>
       <Companies></Companies>
