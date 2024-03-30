@@ -9,69 +9,10 @@ import ScrollComponent from "../components/Scrollcomponent";
 import gridBG from "@/public/gridBG.png";
 import gradientBG from "@/public/radialGradient.png";
 import logitech from "@/public/logitech.png";
-const programs = [
-  {
-    title: "Marketing",
-    description: "The gradual accumulation of information about...",
-  },
-  {
-    title: "Marketing",
-    description: "The gradual accumulation of information about...",
-  },
-  {
-    title: "Marketing",
-    description: "The gradual accumulation of information about...",
-  },
-  {
-    title: "Marketing",
-    description: "The gradual accumulation of information about...",
-  },
-  {
-    title: "Marketing",
-    description: "The gradual accumulation of information about...",
-  },
-  {
-    title: "Marketing",
-    description: "The gradual accumulation of information about...",
-  },
-];
-
-const Card = ({ title, description }) => {
-  return (
-    <div className="wrapper">
-      <div className="flex flex-col items-center justify-center">
-        <Image
-          src={women}
-          alt="Hero Image"
-          width={128}
-          height={128}
-          className="w-[98%] h-[230px] object-cover object-center rounded-2xl z-10 shadow-md"
-        ></Image>
-
-        <div className="relative bg-[#242A3B] pt-36 rounded-3xl min-w-[110%] min-h-[230px] shadow-lg px-2 -mt-32">
-          <h4 className="text-md leading-tight truncate text-center">
-            Mahommad Sarosh
-          </h4>
-          <h4 className="text-sm my-2 text-[#FFFFFF] leading-tight truncate text-center">
-            Product Manager
-          </h4>
-
-          <Image
-            src={google2}
-            alt="Hero Image"
-            width={128}
-            height={128}
-            className="w-20 my-2 h-8 z-10 mx-auto"
-          ></Image>
-        </div>
-      </div>
-    </div>
-  );
-};
 
 const Brandshowcase = () => {
   return (
-    <section className="hidden md:block relative min-h-[50vh] mt-24 py-4">
+    <section className="relative min-h-[50vh] mt-24 py-4">
       <Image
         src={gridBG}
         alt="Hero Image"
@@ -93,77 +34,32 @@ const Brandshowcase = () => {
         Companies We Have Collaborated With
       </h2>
       <p className="text-sm text-white  mx-auto w-[50%] text-center mb-8">
-        Connect with 3000+ investors using Al-powered investor discovery,
+        Connect with 3000+ investors using AI-powered investor discovery,
         personalized pitches, and intelligent outreach.
       </p>
       <div className="pl-0 p-10 w-[100vw]">
         <div className="h-[25vh] flex flex-row justify-between">
-          <div className="w-[40%] flex flex-row items-center justify-center text-[85px]">
+          <div className="w-[40%] flex flex-row items-center justify-center text-[50px] md:text-[85px]">
             15+
           </div>
           <div className="w-[60%] flex flex-col justify-between">
-            <div className="w-[100%] flex flex-row">
-              <div className="w-[12%] min-h-full">
-                <Image src={logitech}></Image>
-              </div>
-              <div className="w-[12%] min-h-full ml-20">
-                <Image src={logitech}></Image>
-              </div>
-              <div className="w-[12%] min-h-full ml-20">
-                <Image src={logitech}></Image>
-              </div>
-              <div className="w-[12%] min-h-full ml-20">
-                <Image src={logitech}></Image>
-              </div>
-            </div>
-            
-            <div className="w-[100%] flex flex-row">
-              <div className="w-[12%] min-h-full">
-                <Image src={logitech}></Image>
-              </div>
-              <div className="w-[12%] min-h-full ml-20">
-                <Image src={logitech}></Image>
-              </div>
-              <div className="w-[12%] min-h-full ml-20">
-                <Image src={logitech}></Image>
-              </div>
-              <div className="w-[12%] min-h-full ml-20">
-                <Image src={logitech}></Image>
-              </div>
+            <div className="w-full flex flex-wrap gap-6 justify-center">
+              {[1, 2, 3, 4, 5, 6].map((index) => (
+                <div key={index} className="w-[20%] mb-4">
+                  <Image src={logitech} />
+                </div>
+              ))}
             </div>
           </div>
         </div>
-        <div className="w-full h-[30vh] flex flex-row justify-between items-center">
+        <div className="w-full md:h-[30vh] flex flex-row justify-between items-center">
           <div className="w-[100%] flex flex-col justify-between items-center">
-            <div className="w-[100%] flex flex-row justify-center items-center">
-              <div className="w-[8%] min-h-full ml-20">
-                <Image src={logitech}></Image>
-              </div>
-              <div className="w-[8%] min-h-full ml-20">
-
-                <Image src={logitech}></Image>
-
-              </div>
-              <div className="w-[8%] min-h-full ml-20">
-
-                <Image src={logitech}></Image>
-
-              </div>
-              <div className="w-[8%] min-h-full ml-20">
-
-                <Image src={logitech}></Image>
-
-              </div>
-              <div className="w-[8%] min-h-full ml-20">
-
-                <Image src={logitech}></Image>
-
-              </div>
-              <div className="w-[8%] min-h-full ml-20">
-
-                <Image src={logitech}></Image>
-
-              </div>
+            <div className="w-full flex flex-wrap gap-6 justify-center">
+              {[1, 2, 3, 4, 5, 6].map((index) => (
+                <div key={index} className="w-[10%] ">
+                  <Image src={logitech} />
+                </div>
+              ))}
             </div>
           </div>
         </div>
