@@ -276,8 +276,8 @@ export default function Homepage() {
           >
             Apply for access -{">"}
           </button>
-          <div className="relative aspect-w-16 aspect-h-9 mx-auto flex justify-center mt-10 h-[70vh] shadow-new ">
-            <div className="absolute top-24 -left-28 ">
+          <div className="relative mx-auto flex justify-center mt-10 h-[70vh] shadow-new ">
+            <div className="absolute top-16 -left-0 md:top-24 md:-left-28 ">
               <CustomImage></CustomImage>
             </div>
             <iframe
@@ -285,7 +285,7 @@ export default function Homepage() {
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
-              className="w-full h-full"
+              className="h-[80%] w-[80%] md:h-full md:w-full"
             ></iframe>
           </div>
         </div>
