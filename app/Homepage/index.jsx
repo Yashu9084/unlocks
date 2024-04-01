@@ -11,6 +11,7 @@ import Timeline from "../Sections/Timeline";
 import cardimg from "../../assets/CardImg.png";
 import edimg from "../../assets/edimg.png";
 import Experience from "../Sections/Experience";
+import CustomImage from "../Sections/CustomImage";
 
 export default function Homepage() {
   return (
@@ -275,18 +276,10 @@ export default function Homepage() {
           >
             Apply for access -{">"}
           </button>
-          <div className="relative aspect-w-16 aspect-h-9 mx-auto flex justify-center mt-10 h-[70vh]">
-            ,
-            <Image
-              className="absolute -left-28 top-[20%]"
-              src={cardimg}
-              alt=""
-            ></Image>
-            <Image
-              className="absolute -left-20 top-40"
-              src={edimg}
-              alt=""
-            ></Image>
+          <div className="relative aspect-w-16 aspect-h-9 mx-auto flex justify-center mt-10 h-[70vh] shadow-new ">
+            <div className="absolute top-24 -left-28 ">
+              <CustomImage></CustomImage>
+            </div>
             <iframe
               src="https://www.youtube.com/embed/r9jwGansp1E"
               frameborder="0"

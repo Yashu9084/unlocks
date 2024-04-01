@@ -42,21 +42,28 @@ const Brandshowcase = () => {
           <div className="w-[40%] flex flex-row items-center justify-center text-[50px] md:text-[85px]">
             15+
           </div>
-          <div className="w-[60%] flex flex-col justify-between">
+          <div className="w-[60%] flex flex-wrap flex-col justify-between">
             <div className="w-full flex flex-wrap gap-6 justify-center">
-              {[1, 2, 3, 4, 5, 6].map((index) => (
-                <div key={index} className="w-[20%] mb-4">
+              {[1, 2, 3, 4].map((index) => (
+                <div key={index} className="w-[50px] md:w-[110px] mb-4">
+                  <Image src={logitech} />
+                </div>
+              ))}
+            </div>
+            <div className="w-full flex flex-wrap gap-6 justify-center">
+              {[1, 2, 3, 4].map((index) => (
+                <div key={index} className="w-[50px] md:w-[110px] mb-4">
                   <Image src={logitech} />
                 </div>
               ))}
             </div>
           </div>
         </div>
-        <div className="w-full md:h-[30vh] flex flex-row justify-between items-center">
-          <div className="w-[100%] flex flex-col justify-between items-center">
-            <div className="w-full flex flex-wrap gap-6 justify-center">
+        <div className="w-[100vw] md:h-[30vh] flex flex-row justify-between items-center">
+          <div className="w-[100%] flex flex-col justify-between items-start">
+            <div className="w-full flex flex-wrap gap-16 justify-center">
               {[1, 2, 3, 4, 5, 6].map((index) => (
-                <div key={index} className="w-[10%] ">
+                <div key={index} className="mt-12 w-[50px] md:w-[110px]">
                   <Image src={logitech} />
                 </div>
               ))}

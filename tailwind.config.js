@@ -79,6 +79,7 @@ module.exports = {
       },
       boxShadow: {
         'explore': '4px 4px 0px 0px #3ACBBC',
+        'new': ' 3px 2px 25.799999237060547px 0px #FFFFFF40',
       },
     },
   },
